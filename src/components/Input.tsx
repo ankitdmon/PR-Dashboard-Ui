@@ -1,12 +1,4 @@
-import { ChangeEvent } from "react";
-
-interface InputTagProps {
-    type: string;
-    name: string;
-    placeholder?: string;
-    value?: string;
-    onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-  }
+import { InputTagProps } from "types/signUp-type";
 
 const Input:React.FC<InputTagProps> = ({ type, name, placeholder, value, onChange }) => {
   return (
